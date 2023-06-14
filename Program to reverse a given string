@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+int main()
+{
+    char str[1000];
+    printf("Enter your name - ");
+    fgets(str, 1000, stdin);
+    printf("Hi %s", str);
+    printf("Revers of your name - %s", strrev(str));
+    return 0;
+}
