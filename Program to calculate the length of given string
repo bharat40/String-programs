@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str[1000];
+    printf("Enter your name - ");
+    fgets(str, 1000, stdin);
+    int i;
+    printf("Hi %s", str);
+    for (i = 1; str[i]; i++);
+    printf("Length of your name - %d", i - 1);
+    return 0;
+}
