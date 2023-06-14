@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str[1000];
+    printf("Enter any string - ");
+    fgets(str, 1000, stdin);
+    char ch;
+    int count = 0;
+    printf("Enter character - ");
+    scanf("%c", &ch);
+    int i;
+    for (i = 0; str[i]; i++)
+    {
+        if (ch == str[i])
+        {
+            count++;
+        }
+    }
+    printf("Occurence of %c in %s - %d", ch, str, count);
+    return 0;
+}
